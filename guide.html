@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>Beginner's Guide to Downhill MTB — DH Europe</title>
+  <meta name="description" content="Everything you need to know before your first downhill mountain biking adventure. Equipment, safety, destinations, and more.">
+  <meta property="og:title" content="Beginner's Guide to Downhill MTB — DH Europe">
+  <meta property="og:description" content="Everything you need to know before your first downhill mountain biking adventure. Equipment, safety, destinations, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1576858574144-9ae1ebcf5ae5?w=1200&h=630&fit=crop">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.2.1" integrity="sha384-NIEnmBZDJa6zQwZWLtsVZJlPYu8tc0CNul8EMJ0WMxf4ZpsKsOfKjtEToHNCoIOH" crossorigin="anonymous"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-dark: #0a0a0a;
+      --color-card: #1a1a1a;
+      --color-card-hover: #222222;
+      --color-light: #f5f5f5;
+      --color-muted: #a0a0a0;
+      --color-accent: #ff6b00;
+      --color-accent-dark: #cc5500;
+      --color-teal: #2dd4bf;
+      --font-family-heading: "Oswald", sans-serif;
+      --font-family-body: "Inter", sans-serif;
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-dark text-light font-body">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="page-transition active"></div>
+  <div class="scroll-progress"></div>
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="font-heading text-2xl font-bold tracking-wider text-light">
+          DH<span class="text-accent">EUROPE</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="text-sm font-medium text-muted hover:text-accent transition-colors">Home</a>
+          <a href="locations.html" class="text-sm font-medium text-muted hover:text-accent transition-colors">Locations</a>
+          <a href="guide.html" class="text-sm font-medium text-light hover:text-accent transition-colors">Guide</a>
+        </div>
+        <button class="md:hidden hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-nav md:hidden" id="mobile-nav">
+        <div class="flex flex-col gap-4 pb-6 pt-2">
+          <a href="index.html" class="text-sm font-medium text-muted hover:text-accent transition-colors">Home</a>
+          <a href="locations.html" class="text-sm font-medium text-muted hover:text-accent transition-colors">Locations</a>
+          <a href="guide.html" class="text-sm font-medium text-light hover:text-accent transition-colors">Guide</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+  <!-- Hero -->
+  <section class="parallax-hero h-[50vh] flex items-center justify-center relative"
+           style="background-image: url('https://images.unsplash.com/photo-1576858574144-9ae1ebcf5ae5?w=1920&q=80');">
+    <div class="hero-overlay"></div>
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+      <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight animate-on-scroll">
+        YOUR GUIDE TO <span class="text-accent">DOWNHILL MTB</span>
+      </h1>
+      <p class="text-muted text-lg md:text-xl mt-4 animate-on-scroll">Everything you need to know before dropping in</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-12 md:py-20 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex gap-12">
+
+        <!-- Sidebar TOC (desktop only) -->
+        <aside class="hidden lg:block w-64 flex-shrink-0">
+          <div class="sticky top-24">
+            <h3 class="font-heading text-sm font-bold uppercase tracking-wider text-muted mb-4">Contents</h3>
+            <nav class="space-y-3">
+              <a href="#what-is-dh" class="block text-sm text-muted hover:text-accent transition-colors">What is Downhill MTB?</a>
+              <a href="#equipment" class="block text-sm text-muted hover:text-accent transition-colors">Essential Equipment</a>
+              <a href="#safety" class="block text-sm text-muted hover:text-accent transition-colors">Safety First</a>
+              <a href="#first-destination" class="block text-sm text-muted hover:text-accent transition-colors">Choosing Your First Destination</a>
+              <a href="#what-to-expect" class="block text-sm text-muted hover:text-accent transition-colors">What to Expect</a>
+              <a href="#fitness" class="block text-sm text-muted hover:text-accent transition-colors">Fitness &amp; Preparation</a>
+            </nav>
+
+          </div>
+        </aside>
+
+        <!-- Content -->
+        <div class="flex-1 max-w-3xl accordion-group">
+
+          <!-- Section 1: What is Downhill MTB? -->
+          <div id="what-is-dh" class="mb-12 scroll-mt-24">
+            <button class="accordion-trigger lg:pointer-events-none w-full text-left flex items-center justify-between py-4 border-b border-white/10 lg:border-0" aria-expanded="false" aria-controls="content-what-is-dh">
+              <h2 class="font-heading text-2xl md:text-3xl font-bold">
+                WHAT IS <span class="text-accent">DOWNHILL MTB?</span>
+              </h2>
+              <svg class="w-6 h-6 text-muted lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="accordion-content lg:!max-h-none lg:overflow-visible" id="content-what-is-dh">
+              <div class="pt-6 space-y-4">
+                <p class="text-muted leading-relaxed">
+                  Downhill mountain biking (DH) is gravity-fed riding at its most intense. Riders are transported to the top of a
+                  mountain by lift, gondola, or vehicle, then descend purpose-built trails featuring jumps, drops, rock gardens,
+                  and bermed corners. It's the Formula 1 of mountain biking -- specialized bikes, full protective gear, and tracks
+                  designed to push the limits of what's rideable.
+                </p>
+                <p class="text-muted leading-relaxed">
+                  The sport emerged in the 1970s in California but has found its spiritual home in the mountains of Europe, where
+                  alpine infrastructure (ski lifts repurposed for summer) created the perfect playground for gravity riders.
+                </p>
+
+                <h3 class="font-heading text-lg font-bold text-light pt-4">DH vs Other Disciplines</h3>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm text-left mt-2">
+                    <thead>
+                      <tr class="border-b border-white/10">
+                        <th class="py-3 pr-4 text-muted font-medium">Discipline</th>
+                        <th class="py-3 pr-4 text-muted font-medium">Direction</th>
+                        <th class="py-3 pr-4 text-muted font-medium">Bike Weight</th>
+                        <th class="py-3 text-muted font-medium">Gear</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-muted">
+                      <tr class="border-b border-white/5">
+                        <td class="py-3 pr-4 text-accent font-medium">Downhill (DH)</td>
+                        <td class="py-3 pr-4">Down only</td>
+                        <td class="py-3 pr-4">15-18kg</td>
+                        <td class="py-3">Full-face, armor</td>
+                      </tr>
+                      <tr class="border-b border-white/5">
+                        <td class="py-3 pr-4 font-medium">Enduro</td>
+                        <td class="py-3 pr-4">Up &amp; down</td>
+                        <td class="py-3 pr-4">13-16kg</td>
+                        <td class="py-3">Full-face, light armor</td>
+                      </tr>
+                      <tr class="border-b border-white/5">
+                        <td class="py-3 pr-4 font-medium">Trail</td>
+                        <td class="py-3 pr-4">Up &amp; down</td>
+                        <td class="py-3 pr-4">12-14kg</td>
+                        <td class="py-3">Half-shell helmet</td>
+                      </tr>
+                      <tr>
+                        <td class="py-3 pr-4 font-medium">Cross-Country (XC)</td>
+                        <td class="py-3 pr-4">Up &amp; down</td>
+                        <td class="py-3 pr-4">9-11kg</td>
+                        <td class="py-3">Lightweight helmet</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Essential Equipment -->
+          <div id="equipment" class="mb-12 scroll-mt-24">
+            <button class="accordion-trigger lg:pointer-events-none w-full text-left flex items-center justify-between py-4 border-b border-white/10 lg:border-0" aria-expanded="false" aria-controls="content-equipment">
+              <h2 class="font-heading text-2xl md:text-3xl font-bold">
+                ESSENTIAL <span class="text-accent">EQUIPMENT</span>
+              </h2>
+              <svg class="w-6 h-6 text-muted lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="accordion-content lg:!max-h-none lg:overflow-visible" id="content-equipment">
+              <div class="pt-6">
+                <p class="text-muted leading-relaxed mb-8">
+                  The right equipment is the difference between a great day and a hospital visit. Here's what you need,
+                  ranked by importance.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <!-- Equipment cards -->
+                  <div class="bg-card rounded-xl p-5 animate-on-scroll">
+                    <div class="flex items-center justify-between mb-3">
+                      <h3 class="font-heading text-lg font-bold">Full-Face Helmet</h3>
+                      <span class="w-3 h-3 rounded-full bg-red-500" title="Critical"></span>
+                    </div>
+                    <p class="text-muted text-sm leading-relaxed">Non-negotiable. Must be certified (CPSC/EN 1078 minimum, ASTM DH preferred). Replace after any impact. A good helmet is your single most important investment.</p>
+                  </div>
+                  <div class="bg-card rounded-xl p-5 animate-on-scroll">
+                    <div class="flex items-center justify-between mb-3">
+                      <h3 class="font-heading text-lg font-bold">Body Armor</h3>
+                      <span class="w-3 h-3 rounded-full bg-red-500" title="Critical"></span>
+                    </div>
+                    <p class="text-muted text-sm leading-relaxed">Back protector, chest, and elbow/forearm protection. Look for CE Level 2 rated armor. D3O and similar impact materials offer great protection-to-weight ratio.</p>
+                  </div>
+                  <div class="bg-card rounded-xl p-5 animate-on-scroll">
+                    <div class="flex items-center justify-between mb-3">
+                      <h3 class="font-heading text-lg font-bold">Gloves</h3>
+                      <span class="w-3 h-3 rounded-full bg-red-500" title="Critical"></span>
+                    </div>
+                    <p class="text-muted text-sm leading-relaxed">Full-finger gloves with palm padding. Essential for grip, protection against branches, and crash slides. Replace when they lose grip texture.</p>
+                  </div>
+                  <div class="bg-card rounded-xl p-5 animate-on-scroll">
+                    <div class="flex items-center justify-between mb-3">
+                      <h3 class="font-heading text-lg font-bold">Goggles</h3>
+                      <span class="w-3 h-3 rounded-full bg-accent" title="Important"></span>
+                    </div>
+                    <p class="text-muted text-sm leading-relaxed">Protect eyes from mud, dust, rocks, and branches. Wide field of vision is crucial. Carry a clear lens for low-light conditions and a tinted lens for sunshine.</p>
+                  </div>
+                  <div class="bg-card rounded-xl p-5 animate-on-scroll">
+                    <div class="flex items-center justify-between mb-3">
+                      <h3 class="font-heading text-lg font-bold">DH Bike</h3>
+                      <span class="w-3 h-3 rounded-full bg-red-500" title="Critical"></span>
+                    </div>
+                    <p class="text-muted text-sm leading-relaxed">200mm+ front and rear suspension, slack geometry, 27.5" or 29" wheels. Most bike parks offer high-quality rental bikes if you don't own one -- this is a great option for beginners.</p>
+                  </div>
+                  <div class="bg-card rounded-xl p-5 animate-on-scroll">
+                    <div class="flex items-center justify-between mb-3">
+                      <h3 class="font-heading text-lg font-bold">Flat Pedal Shoes</h3>
+                      <span class="w-3 h-3 rounded-full bg-accent" title="Important"></span>
+                    </div>
+                    <p class="text-muted text-sm leading-relaxed">Stiff, flat-soled shoes with sticky rubber compounds (like Five Ten Stealth). The grip on flat pedals is essential for confidence and quick foot-off recovery.</p>
+                  </div>
+                  <div class="bg-card rounded-xl p-5 animate-on-scroll">
+                    <div class="flex items-center justify-between mb-3">
+                      <h3 class="font-heading text-lg font-bold">Knee Pads</h3>
+                      <span class="w-3 h-3 rounded-full bg-red-500" title="Critical"></span>
+                    </div>
+                    <p class="text-muted text-sm leading-relaxed">Your knees are exposed and vulnerable. Hard-shell knee pads with D3O or similar impact foam. Must stay in place during a crash -- test the fit before riding.</p>
+                  </div>
+                  <div class="bg-card rounded-xl p-5 animate-on-scroll">
+                    <div class="flex items-center justify-between mb-3">
+                      <h3 class="font-heading text-lg font-bold">Riding Clothing</h3>
+                      <span class="w-3 h-3 rounded-full bg-teal" title="Recommended"></span>
+                    </div>
+                    <p class="text-muted text-sm leading-relaxed">Durable, flexible shorts or pants and a jersey. DH-specific clothing is designed to fit over armor. Avoid anything loose that could snag on the bike or branches.</p>
+                  </div>
+                </div>
+                <div class="mt-6 flex items-center gap-6 text-sm text-muted">
+                  <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-red-500"></span> Critical</div>
+                  <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-accent"></span> Important</div>
+                  <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-teal"></span> Recommended</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Safety First -->
+          <div id="safety" class="mb-12 scroll-mt-24">
+            <button class="accordion-trigger lg:pointer-events-none w-full text-left flex items-center justify-between py-4 border-b border-white/10 lg:border-0" aria-expanded="false" aria-controls="content-safety">
+              <h2 class="font-heading text-2xl md:text-3xl font-bold">
+                SAFETY <span class="text-accent">FIRST</span>
+              </h2>
+              <svg class="w-6 h-6 text-muted lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="accordion-content lg:!max-h-none lg:overflow-visible" id="content-safety">
+              <div class="pt-6 space-y-6">
+                <div class="bg-accent/10 border border-accent/20 rounded-xl p-6">
+                  <h3 class="font-heading text-lg font-bold text-accent mb-2">Golden Rule</h3>
+                  <p class="text-muted leading-relaxed">Ride within your ability. The mountain will always be there tomorrow. Progress gradually and never let peer pressure push you beyond what feels safe.</p>
+                </div>
+
+                <h3 class="font-heading text-lg font-bold text-light">Trail Etiquette</h3>
+                <ol class="space-y-3 text-muted text-sm leading-relaxed list-decimal list-inside">
+                  <li><span class="text-light font-medium">Downhill riders have priority</span> -- uphill riders should yield on DH-designated trails</li>
+                  <li><span class="text-light font-medium">Don't stop on blind corners</span> -- if you need to stop, move completely off the trail</li>
+                  <li><span class="text-light font-medium">Call out when overtaking</span> -- a clear "rider behind" or "on your left" prevents surprises</li>
+                  <li><span class="text-light font-medium">Don't cut trails or ride off-piste</span> -- it damages the environment and creates hazards</li>
+                  <li><span class="text-light font-medium">Report trail damage</span> -- fallen trees, washed-out sections, or dangerous conditions</li>
+                </ol>
+
+                <h3 class="font-heading text-lg font-bold text-light">If You Crash</h3>
+                <ol class="space-y-3 text-muted text-sm leading-relaxed list-decimal list-inside">
+                  <li>Stay still and assess -- don't jump up immediately</li>
+                  <li>Check for serious injury: can you move all limbs? Any numbness or severe pain?</li>
+                  <li>If injured, stay put and signal for help. Most bike parks have trail patrol</li>
+                  <li>If okay, move yourself and your bike off the trail before other riders arrive</li>
+                  <li>Inspect your helmet -- any impact means it must be replaced</li>
+                </ol>
+
+                <h3 class="font-heading text-lg font-bold text-light">Weather Awareness</h3>
+                <p class="text-muted text-sm leading-relaxed">
+                  Mountain weather changes fast. Wet roots and rocks become treacherous. Lightning at altitude is genuinely dangerous.
+                  Check forecasts before riding, carry a lightweight rain jacket, and don't hesitate to call it early if conditions deteriorate.
+                  A fun day cut short beats a dangerous day pushed too far.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 4: Choosing Your First Destination -->
+          <div id="first-destination" class="mb-12 scroll-mt-24">
+            <button class="accordion-trigger lg:pointer-events-none w-full text-left flex items-center justify-between py-4 border-b border-white/10 lg:border-0" aria-expanded="false" aria-controls="content-first-destination">
+              <h2 class="font-heading text-2xl md:text-3xl font-bold">
+                CHOOSING YOUR <span class="text-accent">FIRST DESTINATION</span>
+              </h2>
+              <svg class="w-6 h-6 text-muted lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="accordion-content lg:!max-h-none lg:overflow-visible" id="content-first-destination">
+              <div class="pt-6 space-y-6">
+                <p class="text-muted leading-relaxed">
+                  Not every destination on this site is beginner-friendly. For your first downhill experience, we recommend
+                  places with excellent progression trails, good infrastructure, and a welcoming atmosphere.
+                </p>
+
+                <h3 class="font-heading text-lg font-bold text-light">Our Top Picks for Beginners</h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <a href="locations/bike-park-wales.html" class="location-card block bg-card rounded-xl overflow-hidden">
+                    <div class="relative h-48 overflow-hidden">
+                      <div class="card-image absolute inset-0 bg-cover bg-center"
+                           style="background-image: url('https://images.unsplash.com/photo-1545568100-87f0cfc5a922?w=600&q=80');"></div>
+                      <div class="card-overlay absolute inset-0"></div>
+                      <div class="absolute bottom-0 left-0 right-0 p-4">
+                        <span class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-medium rounded mb-1">BEGINNER FRIENDLY</span>
+                        <h4 class="font-heading text-lg font-bold text-light">Bike Park Wales</h4>
+                        <p class="text-muted text-xs mt-1">UK's premier bike park, 40+ trails, year-round</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="locations/finale-ligure.html" class="location-card block bg-card rounded-xl overflow-hidden">
+                    <div class="relative h-48 overflow-hidden">
+                      <div class="card-image absolute inset-0 bg-cover bg-center"
+                           style="background-image: url('https://images.unsplash.com/photo-1533130061792-64b345e4a833?w=600&q=80');"></div>
+                      <div class="card-overlay absolute inset-0"></div>
+                      <div class="absolute bottom-0 left-0 right-0 p-4">
+                        <span class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-medium rounded mb-1">BEGINNER FRIENDLY</span>
+                        <h4 class="font-heading text-lg font-bold text-light">Finale Ligure</h4>
+                        <p class="text-muted text-xs mt-1">Mediterranean trails, year-round, forgiving terrain</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <h3 class="font-heading text-lg font-bold text-light mt-6">Comparison</h3>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm text-left mt-2">
+                    <thead>
+                      <tr class="border-b border-white/10">
+                        <th class="py-3 pr-4 text-muted font-medium">Factor</th>
+                        <th class="py-3 pr-4 text-muted font-medium">Bike Park Wales</th>
+                        <th class="py-3 text-muted font-medium">Finale Ligure</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-muted">
+                      <tr class="border-b border-white/5">
+                        <td class="py-3 pr-4 font-medium text-light">Best for</td>
+                        <td class="py-3 pr-4">First-timers, UK-based riders</td>
+                        <td class="py-3">Sun-seekers, year-round riding</td>
+                      </tr>
+                      <tr class="border-b border-white/5">
+                        <td class="py-3 pr-4 font-medium text-light">Uplift</td>
+                        <td class="py-3 pr-4">Vehicle (included in pass)</td>
+                        <td class="py-3">Shuttle services</td>
+                      </tr>
+                      <tr class="border-b border-white/5">
+                        <td class="py-3 pr-4 font-medium text-light">Season</td>
+                        <td class="py-3 pr-4">Year-round</td>
+                        <td class="py-3">Year-round</td>
+                      </tr>
+                      <tr class="border-b border-white/5">
+                        <td class="py-3 pr-4 font-medium text-light">Bike rental</td>
+                        <td class="py-3 pr-4">On-site</td>
+                        <td class="py-3">Multiple shops in town</td>
+                      </tr>
+                      <tr>
+                        <td class="py-3 pr-4 font-medium text-light">Vibe</td>
+                        <td class="py-3 pr-4">Friendly, supportive community</td>
+                        <td class="py-3">Mediterranean relaxation</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 5: What to Expect -->
+          <div id="what-to-expect" class="mb-12 scroll-mt-24">
+            <button class="accordion-trigger lg:pointer-events-none w-full text-left flex items-center justify-between py-4 border-b border-white/10 lg:border-0" aria-expanded="false" aria-controls="content-what-to-expect">
+              <h2 class="font-heading text-2xl md:text-3xl font-bold">
+                WHAT TO <span class="text-accent">EXPECT</span>
+              </h2>
+              <svg class="w-6 h-6 text-muted lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="accordion-content lg:!max-h-none lg:overflow-visible" id="content-what-to-expect">
+              <div class="pt-6 space-y-6">
+                <p class="text-muted leading-relaxed">
+                  A typical day at a bike park follows a rhythm. Here's what to expect on your first visit.
+                </p>
+
+                <div class="space-y-4">
+                  <div class="flex gap-4 items-start animate-on-scroll">
+                    <div class="flex-shrink-0 w-16 text-right">
+                      <span class="font-heading text-lg font-bold text-accent">08:00</span>
+                    </div>
+                    <div class="flex-1 border-l-2 border-white/10 pl-4 pb-4">
+                      <h4 class="font-medium text-light">Arrive &amp; Gear Up</h4>
+                      <p class="text-muted text-sm mt-1">Arrive early for parking and gear setup. Check bike, air up tires, adjust suspension settings. Apply sunscreen, fill water bottles.</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 items-start animate-on-scroll">
+                    <div class="flex-shrink-0 w-16 text-right">
+                      <span class="font-heading text-lg font-bold text-accent">09:00</span>
+                    </div>
+                    <div class="flex-1 border-l-2 border-white/10 pl-4 pb-4">
+                      <h4 class="font-medium text-light">First Lifts</h4>
+                      <p class="text-muted text-sm mt-1">Most lifts open at 9am. Queue early for the first gondola. Start with a warm-up run on an easy trail to get your flow.</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 items-start animate-on-scroll">
+                    <div class="flex-shrink-0 w-16 text-right">
+                      <span class="font-heading text-lg font-bold text-accent">10:00</span>
+                    </div>
+                    <div class="flex-1 border-l-2 border-white/10 pl-4 pb-4">
+                      <h4 class="font-medium text-light">Morning Session</h4>
+                      <p class="text-muted text-sm mt-1">3-4 runs on your chosen trails. Focus on progression -- each run, push a little further. Take photos. Drink water between runs.</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 items-start animate-on-scroll">
+                    <div class="flex-shrink-0 w-16 text-right">
+                      <span class="font-heading text-lg font-bold text-accent">12:30</span>
+                    </div>
+                    <div class="flex-1 border-l-2 border-white/10 pl-4 pb-4">
+                      <h4 class="font-medium text-light">Lunch Break</h4>
+                      <p class="text-muted text-sm mt-1">Mountain restaurants or packed lunch. Rest your arms. Refuel properly -- you're burning more energy than you think. Share stories with other riders.</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 items-start animate-on-scroll">
+                    <div class="flex-shrink-0 w-16 text-right">
+                      <span class="font-heading text-lg font-bold text-accent">14:00</span>
+                    </div>
+                    <div class="flex-1 border-l-2 border-white/10 pl-4 pb-4">
+                      <h4 class="font-medium text-light">Afternoon Session</h4>
+                      <p class="text-muted text-sm mt-1">2-3 more runs. Fatigue sets in -- this is when crashes happen. If your concentration dips, ride easier trails or call it a day. Quality over quantity.</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 items-start animate-on-scroll">
+                    <div class="flex-shrink-0 w-16 text-right">
+                      <span class="font-heading text-lg font-bold text-accent">16:30</span>
+                    </div>
+                    <div class="flex-1 border-l-2 border-white/10 pl-4 pb-4">
+                      <h4 class="font-medium text-light">Wind Down</h4>
+                      <p class="text-muted text-sm mt-1">Last lift usually around 16:30-17:00. Clean and inspect your bike. Check for any mechanical issues. Stretch while your muscles are warm.</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 items-start animate-on-scroll">
+                    <div class="flex-shrink-0 w-16 text-right">
+                      <span class="font-heading text-lg font-bold text-accent">18:00</span>
+                    </div>
+                    <div class="flex-1 pl-4">
+                      <h4 class="font-medium text-light">Apres-Ride</h4>
+                      <p class="text-muted text-sm mt-1">Find a local bar or restaurant. Compare bruises, plan tomorrow's routes, and soak in the post-ride buzz. You've earned it.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 6: Fitness & Preparation -->
+          <div id="fitness" class="mb-12 scroll-mt-24">
+            <button class="accordion-trigger lg:pointer-events-none w-full text-left flex items-center justify-between py-4 border-b border-white/10 lg:border-0" aria-expanded="false" aria-controls="content-fitness">
+              <h2 class="font-heading text-2xl md:text-3xl font-bold">
+                FITNESS &amp; <span class="text-accent">PREPARATION</span>
+              </h2>
+              <svg class="w-6 h-6 text-muted lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="accordion-content lg:!max-h-none lg:overflow-visible" id="content-fitness">
+              <div class="pt-6 space-y-6">
+                <p class="text-muted leading-relaxed">
+                  Don't underestimate the physical demands of downhill. You may not be pedaling uphill, but your body is
+                  working hard to absorb impacts, control the bike, and maintain position. A day of DH riding is genuinely exhausting.
+                </p>
+
+                <h3 class="font-heading text-lg font-bold text-light">Key Muscle Groups</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div class="bg-card rounded-xl p-5 animate-on-scroll">
+                    <h4 class="font-heading font-bold text-accent mb-2">Forearms &amp; Grip</h4>
+                    <p class="text-muted text-sm leading-relaxed">The number one limiter for new riders. Gripping the bars and pulling the brake levers for extended descents causes intense forearm fatigue ("arm pump"). Train with grip strengtheners and dead hangs.</p>
+                  </div>
+                  <div class="bg-card rounded-xl p-5 animate-on-scroll">
+                    <h4 class="font-heading font-bold text-accent mb-2">Core</h4>
+                    <p class="text-muted text-sm leading-relaxed">Your core stabilizes everything. It transfers force between upper and lower body, helps absorb impacts, and keeps you balanced on the bike. Planks, dead bugs, and rotational exercises are gold.</p>
+                  </div>
+                  <div class="bg-card rounded-xl p-5 animate-on-scroll">
+                    <h4 class="font-heading font-bold text-accent mb-2">Legs &amp; Glutes</h4>
+                    <p class="text-muted text-sm leading-relaxed">Standing on the pedals for minutes at a time in the "attack position" demands leg endurance. Squats, lunges, and wall sits build the specific strength you need.</p>
+                  </div>
+                  <div class="bg-card rounded-xl p-5 animate-on-scroll">
+                    <h4 class="font-heading font-bold text-accent mb-2">Shoulders &amp; Back</h4>
+                    <p class="text-muted text-sm leading-relaxed">Absorbing impacts and controlling the front end loads your upper body. Push-ups, rows, and shoulder stability exercises prepare you for a full day of descending.</p>
+                  </div>
+                </div>
+
+                <h3 class="font-heading text-lg font-bold text-light">Training Tips</h3>
+                <ul class="space-y-2 text-muted text-sm leading-relaxed list-disc list-inside">
+                  <li>Start training 6-8 weeks before your trip for meaningful adaptation</li>
+                  <li>Focus on grip endurance: farmer's carries, dead hangs, wrist curls</li>
+                  <li>Ride your regular bike as much as possible -- time on any bike helps</li>
+                  <li>Yoga or stretching improves the flexibility you need for the attack position</li>
+                  <li>Cardio matters even though you're going downhill -- interval training is most relevant</li>
+                </ul>
+
+                <h3 class="font-heading text-lg font-bold text-light">Recovery</h3>
+                <p class="text-muted text-sm leading-relaxed">
+                  Multi-day riding trips demand good recovery practices. Stretch after each session, stay hydrated
+                  (altitude increases fluid loss), eat protein-rich meals, and sleep well. Consider a rest day mid-trip
+                  to explore the area on foot -- your body and your riding will thank you.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-card border-t border-white/5 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div>
+          <h4 class="font-heading text-lg font-bold mb-4">DESTINATIONS</h4>
+          <ul class="space-y-2 text-sm text-muted">
+            <li><a href="locations/morzine.html" class="hover:text-accent transition-colors">Morzine / Les Gets</a></li>
+            <li><a href="locations/leogang.html" class="hover:text-accent transition-colors">Leogang</a></li>
+            <li><a href="locations/val-di-sole.html" class="hover:text-accent transition-colors">Val di Sole</a></li>
+            <li><a href="locations/fort-william.html" class="hover:text-accent transition-colors">Fort William</a></li>
+            <li><a href="locations/verbier.html" class="hover:text-accent transition-colors">Verbier</a></li>
+            <li><a href="locations/finale-ligure.html" class="hover:text-accent transition-colors">Finale Ligure</a></li>
+            <li><a href="locations/schladming.html" class="hover:text-accent transition-colors">Schladming</a></li>
+            <li><a href="locations/vallnord.html" class="hover:text-accent transition-colors">Vallnord</a></li>
+            <li><a href="locations/bike-park-wales.html" class="hover:text-accent transition-colors">Bike Park Wales</a></li>
+            <li><a href="locations/chatel.html" class="hover:text-accent transition-colors">Chatel</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading text-lg font-bold mb-4">EXPLORE</h4>
+          <ul class="space-y-2 text-sm text-muted">
+            <li><a href="index.html" class="hover:text-accent transition-colors">Home</a></li>
+            <li><a href="locations.html" class="hover:text-accent transition-colors">All Locations</a></li>
+            <li><a href="guide.html" class="hover:text-accent transition-colors">Beginner's Guide</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading text-lg font-bold mb-4">CREDITS</h4>
+          <p class="text-sm text-muted leading-relaxed">
+            A passion project celebrating Europe's finest downhill mountain biking destinations.
+            Images via Unsplash. Built with Tailwind CSS.
+          </p>
+          <p class="text-sm text-muted mt-4">
+            <span class="text-accent font-heading font-bold">DH</span>EUROPE
+          </p>
+        </div>
+      </div>
+      <div class="border-t border-white/5 pt-8 text-center text-sm text-muted">
+        <p>&copy; 2026 DHEUROPE. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

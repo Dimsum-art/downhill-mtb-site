@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <title>Bike Park Wales — DH Europe</title>
+  <meta name="description" content="Bike Park Wales - the UK's premier uplift-served bike park with 40+ trails, year-round operation, and world-class trail building.">
+  <meta property="og:title" content="Bike Park Wales — DH Europe">
+  <meta property="og:description" content="Bike Park Wales - the UK's premier uplift-served bike park with 40+ trails, year-round operation, and world-class trail building.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?w=1200&h=630&fit=crop">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.2.1" integrity="sha384-NIEnmBZDJa6zQwZWLtsVZJlPYu8tc0CNul8EMJ0WMxf4ZpsKsOfKjtEToHNCoIOH" crossorigin="anonymous"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-dark: #0a0a0a;
+      --color-card: #1a1a1a;
+      --color-card-hover: #222222;
+      --color-light: #f5f5f5;
+      --color-muted: #a0a0a0;
+      --color-accent: #ff6b00;
+      --color-accent-dark: #cc5500;
+      --color-teal: #2dd4bf;
+      --font-family-heading: "Oswald", sans-serif;
+      --font-family-body: "Inter", sans-serif;
+    }
+  </style>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-dark text-light font-body">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="page-transition active"></div>
+  <div class="scroll-progress"></div>
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="../index.html" class="font-heading text-2xl font-bold tracking-wider text-light">
+          DH<span class="text-accent">EUROPE</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="../index.html" class="text-sm font-medium text-muted hover:text-accent transition-colors">Home</a>
+          <a href="../locations.html" class="text-sm font-medium text-muted hover:text-accent transition-colors">Locations</a>
+          <a href="../guide.html" class="text-sm font-medium text-muted hover:text-accent transition-colors">Guide</a>
+        </div>
+        <button class="md:hidden hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-nav md:hidden" id="mobile-nav">
+        <div class="flex flex-col gap-4 pb-6 pt-2">
+          <a href="../index.html" class="text-sm font-medium text-muted hover:text-accent transition-colors">Home</a>
+          <a href="../locations.html" class="text-sm font-medium text-muted hover:text-accent transition-colors">Locations</a>
+          <a href="../guide.html" class="text-sm font-medium text-muted hover:text-accent transition-colors">Guide</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+  <!-- Hero -->
+  <section class="parallax-hero h-[70vh] flex items-end relative"
+           style="background-image: url('https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?w=1920&q=80');">
+    <div class="hero-overlay"></div>
+    <div class="relative z-10 w-full max-w-7xl mx-auto px-4 pb-12">
+      <nav class="text-sm text-muted mb-4 animate-on-scroll">
+        <a href="../index.html" class="hover:text-accent transition-colors">Home</a>
+        <span class="mx-2">/</span>
+        <a href="../locations.html" class="hover:text-accent transition-colors">Locations</a>
+        <span class="mx-2">/</span>
+        <span class="text-light">Bike Park Wales</span>
+      </nav>
+
+      <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight animate-on-scroll">
+        BIKE PARK <span class="text-accent">WALES</span>
+      </h1>
+      <div class="flex flex-wrap items-center gap-4 mt-4 animate-on-scroll">
+        <span class="text-muted text-lg">UK</span>
+        <span class="inline-block px-3 py-1 bg-accent/20 text-accent text-sm font-medium rounded-full">Intermediate</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats -->
+  <section class="py-12 md:py-16 px-4 bg-card/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+        <div class="text-center animate-on-scroll">
+          <div class="flex justify-center mb-3">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 21l6-6m0 0l4-8 4 8m-8 0h8M17 21l-4-8"/></svg>
+          </div>
+          <p class="font-heading text-2xl md:text-3xl font-bold text-light">500m</p>
+          <p class="text-muted text-sm mt-1">Elevation</p>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="flex justify-center mb-3">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+          </div>
+          <p class="font-heading text-2xl md:text-3xl font-bold text-light">40+</p>
+          <p class="text-muted text-sm mt-1">Trails</p>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="flex justify-center mb-3">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <p class="font-heading text-2xl md:text-3xl font-bold text-light">Intermediate</p>
+          <p class="text-muted text-sm mt-1">Difficulty</p>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="flex justify-center mb-3">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+          <p class="font-heading text-2xl md:text-3xl font-bold text-light">Year-round</p>
+          <p class="text-muted text-sm mt-1">Season</p>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="flex justify-center mb-3">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+          </div>
+          <p class="font-heading text-2xl md:text-3xl font-bold text-light">300m</p>
+          <p class="text-muted text-sm mt-1">Vertical Drop</p>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="flex justify-center mb-3">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+          </div>
+          <p class="font-heading text-2xl md:text-3xl font-bold text-light">Shuttle service</p>
+          <p class="text-muted text-sm mt-1">Uplift</p>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="flex justify-center mb-3">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/></svg>
+          </div>
+          <p class="font-heading text-2xl md:text-3xl font-bold text-light">UK</p>
+          <p class="text-muted text-sm mt-1">Country</p>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="flex justify-center mb-3">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+          </div>
+          <p class="font-heading text-2xl md:text-3xl font-bold text-light">Cardiff</p>
+          <p class="text-muted text-sm mt-1">Nearest Airport (45min)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Description -->
+  <section class="py-16 md:py-24 px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="animate-on-scroll">
+        <p class="text-lg text-muted leading-relaxed mb-6">
+          Bike Park Wales proved you don't need the Alps to build world-class trails. Carved from a Welsh hillside above
+          <span class="text-accent font-medium">Merthyr Tydfil</span>, BPW has become the UK's premier uplift-served bike park. With
+          <span class="text-accent font-medium">40+ trails</span> ranging from gentle blue runs to terrifying black diamond lines, it's the
+          perfect introduction to gravity riding.
+        </p>
+        <p class="text-lg text-muted leading-relaxed mb-6">
+          The trails are machine-shaped and immaculately maintained, offering consistent quality rain or shine. The shuttle
+          service means maximum descending with minimum effort.
+        </p>
+        <p class="text-lg text-muted leading-relaxed mb-10">
+          Year-round operation and proximity to major cities make it incredibly accessible.
+        </p>
+      </div>
+      <blockquote class="pull-quote animate-on-scroll my-12">
+        "No mountains? No problem. Wales proved that great trails are built, not born."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Trail Highlights -->
+  <section class="py-16 md:py-24 px-4 bg-card/30">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold mb-12 animate-on-scroll">
+        TRAIL <span class="text-accent">HIGHLIGHTS</span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 stagger-children">
+        <div class="bg-card rounded-xl p-6 animate-on-scroll">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-heading text-xl font-bold">Rim Dinger</h3>
+            <span class="text-sm text-red-400 font-medium">Expert</span>
+          </div>
+          <div class="difficulty-bar mb-4"><div class="fill expert"></div></div>
+          <p class="text-muted text-sm mb-2">1.8km &bull; 280m vertical drop</p>
+          <p class="text-muted text-sm leading-relaxed">
+            BPW's most feared trail. Steep, rocky, and unforgiving -- the name says it all. Technical rock
+            gardens, exposed roots, and drops that demand full commitment.
+          </p>
+        </div>
+        <div class="bg-card rounded-xl p-6 animate-on-scroll">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-heading text-xl font-bold">Terry's Belly</h3>
+            <span class="text-sm text-red-400 font-medium">Advanced</span>
+          </div>
+          <div class="difficulty-bar mb-4"><div class="fill advanced"></div></div>
+          <p class="text-muted text-sm mb-2">2.2km &bull; 260m vertical drop</p>
+          <p class="text-muted text-sm leading-relaxed">
+            A red-graded classic that mixes technical sections with flow. Tight turns through dense forest,
+            off-camber roots, and enough speed to keep advanced riders honest.
+          </p>
+        </div>
+        <div class="bg-card rounded-xl p-6 animate-on-scroll">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-heading text-xl font-bold">Melted Welly</h3>
+            <span class="text-sm text-accent font-medium">Intermediate</span>
+          </div>
+          <div class="difficulty-bar mb-4"><div class="fill intermediate"></div></div>
+          <p class="text-muted text-sm mb-2">1.5km &bull; 200m vertical drop</p>
+          <p class="text-muted text-sm leading-relaxed">
+            A brilliant blue trail that flows beautifully. Machine-built berms, gentle jumps, and wide lines
+            make this the perfect confidence builder for progressing riders.
+          </p>
+        </div>
+        <div class="bg-card rounded-xl p-6 animate-on-scroll">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-heading text-xl font-bold">Norkle</h3>
+            <span class="text-sm text-teal font-medium">Intermediate</span>
+          </div>
+          <div class="difficulty-bar mb-4"><div class="fill intermediate"></div></div>
+          <p class="text-muted text-sm mb-2">2.0km &bull; 220m vertical drop</p>
+          <p class="text-muted text-sm leading-relaxed">
+            One of BPW's longest blues. Rollers, berms, and optional features throughout. A trail you can
+            ride ten times and find a new line every run.
+          </p>
+        </div>
+      </div>
+      <div class="trail-map-placeholder h-48 md:h-64 flex items-center justify-center animate-on-scroll">
+        <p class="text-muted text-sm">Trail map loading...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Getting There -->
+  <section class="py-16 md:py-24 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold mb-10 animate-on-scroll">
+        GETTING <span class="text-accent">THERE</span>
+      </h2>
+      <div class="space-y-6">
+        <div class="flex items-start gap-4 animate-on-scroll">
+          <svg class="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+          <div>
+            <p class="font-medium text-light">Nearest Airports</p>
+            <p class="text-muted text-sm mt-1">Cardiff Airport (CWL) -- 45 minute drive. Bristol Airport (BRS) -- 1 hour drive.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 animate-on-scroll">
+          <svg class="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10m10 0h-3m3 0h4a1 1 0 001-1v-3.5a1 1 0 00-.3-.7l-3-3a1 1 0 00-.7-.3H13"/></svg>
+          <div>
+            <p class="font-medium text-light">By Car</p>
+            <p class="text-muted text-sm mt-1">M4 motorway to A470 north. Well-signposted from Merthyr Tydfil. Ample free parking on site.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 animate-on-scroll">
+          <svg class="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          <div>
+            <p class="font-medium text-light">Public Transport</p>
+            <p class="text-muted text-sm mt-1">Train to Merthyr Tydfil station, then a short taxi ride to the park. Direct trains from Cardiff Central run regularly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pro Tips -->
+  <section class="py-16 md:py-24 px-4 bg-card/30">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold mb-12 animate-on-scroll">
+        PRO <span class="text-accent">TIPS</span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 stagger-children">
+        <div class="flex gap-5 animate-on-scroll">
+          <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+            <span class="font-heading text-xl font-bold text-accent">1</span>
+          </div>
+          <div>
+            <h3 class="font-heading text-lg font-bold mb-2">Book Shuttle Tickets Early</h3>
+            <p class="text-muted text-sm leading-relaxed">Book shuttle tickets in advance -- weekends sell out. Midweek sessions are quieter and often discounted, giving you more runs for your money.</p>
+          </div>
+        </div>
+        <div class="flex gap-5 animate-on-scroll">
+          <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+            <span class="font-heading text-xl font-bold text-accent">2</span>
+          </div>
+          <div>
+            <h3 class="font-heading text-lg font-bold mb-2">Start on Blue Trails</h3>
+            <p class="text-muted text-sm leading-relaxed">Start on blue trails to learn the soil. Welsh dirt rides differently to alpine terrain -- it's softer, grippier when dry, and slippery when wet. Get a feel for it first.</p>
+          </div>
+        </div>
+        <div class="flex gap-5 animate-on-scroll">
+          <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+            <span class="font-heading text-xl font-bold text-accent">3</span>
+          </div>
+          <div>
+            <h3 class="font-heading text-lg font-bold mb-2">Bring Mudguards</h3>
+            <p class="text-muted text-sm leading-relaxed">Bring mudguards -- Welsh rain is legendary. Even on dry days the forest trails can hold moisture. A front mudguard will save your face and your goggles.</p>
+          </div>
+        </div>
+        <div class="flex gap-5 animate-on-scroll">
+          <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+            <span class="font-heading text-xl font-bold text-accent">4</span>
+          </div>
+          <div>
+            <h3 class="font-heading text-lg font-bold mb-2">Hit the Cafe</h3>
+            <p class="text-muted text-sm leading-relaxed">The on-site cafe does excellent post-ride food. Refuel with a proper Welsh breakfast or a loaded burger before tackling the afternoon session.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- More Locations -->
+  <section class="py-16 md:py-24 px-4">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold mb-12 animate-on-scroll">
+        EXPLORE <span class="text-accent">MORE</span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 stagger-children">
+        <a href="chatel.html" class="location-card block bg-card rounded-xl overflow-hidden animate-on-scroll">
+          <div class="relative h-56 overflow-hidden">
+            <div class="card-image absolute inset-0 bg-cover bg-center"
+                 style="background-image: url('https://images.unsplash.com/photo-1605539556552-d7a8a4e0a261?w=600&q=80');"></div>
+            <div class="card-overlay absolute inset-0"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-5">
+              <span class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-medium rounded mb-2">FRANCE</span>
+              <h3 class="font-heading text-lg font-bold text-light">Chatel</h3>
+              <p class="text-muted text-xs mt-1">Pre la Joux -- where French DH was born</p>
+            </div>
+          </div>
+        </a>
+        <a href="morzine.html" class="location-card block bg-card rounded-xl overflow-hidden animate-on-scroll">
+          <div class="relative h-56 overflow-hidden">
+            <div class="card-image absolute inset-0 bg-cover bg-center"
+                 style="background-image: url('https://images.unsplash.com/photo-1605540436563-5bca919ae766?w=600&q=80');"></div>
+            <div class="card-overlay absolute inset-0"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-5">
+              <span class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-medium rounded mb-2">FRANCE</span>
+              <h3 class="font-heading text-lg font-bold text-light">Morzine</h3>
+              <p class="text-muted text-xs mt-1">The gateway to the Portes du Soleil</p>
+            </div>
+          </div>
+        </a>
+        <a href="leogang.html" class="location-card block bg-card rounded-xl overflow-hidden animate-on-scroll">
+          <div class="relative h-56 overflow-hidden">
+            <div class="card-image absolute inset-0 bg-cover bg-center"
+                 style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80');"></div>
+            <div class="card-overlay absolute inset-0"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-5">
+              <span class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-medium rounded mb-2">AUSTRIA</span>
+              <h3 class="font-heading text-lg font-bold text-light">Leogang</h3>
+              <p class="text-muted text-xs mt-1">Where World Cup legends are made</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-card border-t border-white/5 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div>
+          <h4 class="font-heading text-lg font-bold mb-4">DESTINATIONS</h4>
+          <ul class="space-y-2 text-sm text-muted">
+            <li><a href="morzine.html" class="hover:text-accent transition-colors">Morzine / Les Gets</a></li>
+            <li><a href="leogang.html" class="hover:text-accent transition-colors">Leogang</a></li>
+            <li><a href="val-di-sole.html" class="hover:text-accent transition-colors">Val di Sole</a></li>
+            <li><a href="fort-william.html" class="hover:text-accent transition-colors">Fort William</a></li>
+            <li><a href="verbier.html" class="hover:text-accent transition-colors">Verbier</a></li>
+            <li><a href="finale-ligure.html" class="hover:text-accent transition-colors">Finale Ligure</a></li>
+            <li><a href="schladming.html" class="hover:text-accent transition-colors">Schladming</a></li>
+            <li><a href="vallnord.html" class="hover:text-accent transition-colors">Vallnord</a></li>
+            <li><a href="bike-park-wales.html" class="hover:text-accent transition-colors">Bike Park Wales</a></li>
+            <li><a href="chatel.html" class="hover:text-accent transition-colors">Chatel</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading text-lg font-bold mb-4">EXPLORE</h4>
+          <ul class="space-y-2 text-sm text-muted">
+            <li><a href="../index.html" class="hover:text-accent transition-colors">Home</a></li>
+            <li><a href="../locations.html" class="hover:text-accent transition-colors">All Locations</a></li>
+            <li><a href="../guide.html" class="hover:text-accent transition-colors">Beginner's Guide</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading text-lg font-bold mb-4">CREDITS</h4>
+          <p class="text-sm text-muted leading-relaxed">
+            A passion project celebrating Europe's finest downhill mountain biking destinations.
+            Images via Unsplash. Built with Tailwind CSS.
+          </p>
+          <p class="text-sm text-muted mt-4">
+            <span class="text-accent font-heading font-bold">DH</span>EUROPE
+          </p>
+        </div>
+      </div>
+      <div class="border-t border-white/5 pt-8 text-center text-sm text-muted">
+        <p>&copy; 2026 DHEUROPE. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

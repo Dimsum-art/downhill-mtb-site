@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <title>Val di Sole — DH Europe</title>
+  <meta name="description" content="Val di Sole - home of the Black Snake, one of the most feared courses on the UCI DH World Cup circuit in the Trentino valley.">
+  <meta property="og:title" content="Val di Sole — DH Europe">
+  <meta property="og:description" content="Val di Sole - home of the Black Snake, one of the most feared courses on the UCI DH World Cup circuit in the Trentino valley.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1597245667016-6d2b1e6e3c42?w=1200&h=630&fit=crop">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.2.1" integrity="sha384-NIEnmBZDJa6zQwZWLtsVZJlPYu8tc0CNul8EMJ0WMxf4ZpsKsOfKjtEToHNCoIOH" crossorigin="anonymous"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-dark: #0a0a0a;
+      --color-card: #1a1a1a;
+      --color-card-hover: #222222;
+      --color-light: #f5f5f5;
+      --color-muted: #a0a0a0;
+      --color-accent: #ff6b00;
+      --color-accent-dark: #cc5500;
+      --color-teal: #2dd4bf;
+      --font-family-heading: "Oswald", sans-serif;
+      --font-family-body: "Inter", sans-serif;
+    }
+  </style>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-dark text-light font-body">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="page-transition active"></div>
+  <div class="scroll-progress"></div>
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="../index.html" class="font-heading text-2xl font-bold tracking-wider text-light">
+          DH<span class="text-accent">EUROPE</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="../index.html" class="text-sm font-medium text-muted hover:text-accent transition-colors">Home</a>
+          <a href="../locations.html" class="text-sm font-medium text-muted hover:text-accent transition-colors">Locations</a>
+          <a href="../guide.html" class="text-sm font-medium text-muted hover:text-accent transition-colors">Guide</a>
+        </div>
+        <button class="md:hidden hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-nav md:hidden" id="mobile-nav">
+        <div class="flex flex-col gap-4 pb-6 pt-2">
+          <a href="../index.html" class="text-sm font-medium text-muted hover:text-accent transition-colors">Home</a>
+          <a href="../locations.html" class="text-sm font-medium text-muted hover:text-accent transition-colors">Locations</a>
+          <a href="../guide.html" class="text-sm font-medium text-muted hover:text-accent transition-colors">Guide</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+  <!-- Hero -->
+  <section class="parallax-hero h-[70vh] flex items-end relative"
+           style="background-image: url('https://images.unsplash.com/photo-1597245667016-6d2b1e6e3c42?w=1920&q=80');">
+    <div class="hero-overlay"></div>
+    <div class="relative z-10 w-full max-w-7xl mx-auto px-4 pb-12">
+      <nav class="text-sm text-muted mb-4 animate-on-scroll">
+        <a href="../index.html" class="hover:text-accent transition-colors">Home</a>
+        <span class="mx-2">/</span>
+        <a href="../locations.html" class="hover:text-accent transition-colors">Locations</a>
+        <span class="mx-2">/</span>
+        <span class="text-light">Val di Sole</span>
+      </nav>
+
+      <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight animate-on-scroll">
+        VAL DI <span class="text-accent">SOLE</span>
+      </h1>
+      <div class="flex flex-wrap items-center gap-4 mt-4 animate-on-scroll">
+        <span class="text-muted text-lg">Italy</span>
+        <span class="inline-block px-3 py-1 bg-red-500/20 text-red-400 text-sm font-medium rounded-full">Expert</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats -->
+  <section class="py-12 md:py-16 px-4 bg-card/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+        <div class="text-center animate-on-scroll">
+          <div class="flex justify-center mb-3">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 21l6-6m0 0l4-8 4 8m-8 0h8M17 21l-4-8"/></svg>
+          </div>
+          <p class="font-heading text-2xl md:text-3xl font-bold text-light">2,200m</p>
+          <p class="text-muted text-sm mt-1">Elevation</p>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="flex justify-center mb-3">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+          </div>
+          <p class="font-heading text-2xl md:text-3xl font-bold text-light">25+</p>
+          <p class="text-muted text-sm mt-1">Trails</p>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="flex justify-center mb-3">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <p class="font-heading text-2xl md:text-3xl font-bold text-light">Expert</p>
+          <p class="text-muted text-sm mt-1">Difficulty</p>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="flex justify-center mb-3">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+          <p class="font-heading text-2xl md:text-3xl font-bold text-light">Jun - Sep</p>
+          <p class="text-muted text-sm mt-1">Season</p>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="flex justify-center mb-3">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+          </div>
+          <p class="font-heading text-2xl md:text-3xl font-bold text-light">850m</p>
+          <p class="text-muted text-sm mt-1">Vertical Drop</p>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="flex justify-center mb-3">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+          </div>
+          <p class="font-heading text-2xl md:text-3xl font-bold text-light">6 Lifts</p>
+          <p class="text-muted text-sm mt-1">Uplift</p>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="flex justify-center mb-3">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/></svg>
+          </div>
+          <p class="font-heading text-2xl md:text-3xl font-bold text-light">Italy</p>
+          <p class="text-muted text-sm mt-1">Country</p>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="flex justify-center mb-3">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+          </div>
+          <p class="font-heading text-2xl md:text-3xl font-bold text-light">Verona</p>
+          <p class="text-muted text-sm mt-1">Nearest Airport (2h)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Description -->
+  <section class="py-16 md:py-24 px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="animate-on-scroll">
+        <p class="text-lg text-muted leading-relaxed mb-6">
+          Val di Sole's <span class="text-accent font-medium">Black Snake</span> track is perhaps the most feared course on
+          the World Cup circuit. Notorious for its root-infested, punishing terrain that chews up bikes and riders alike. The
+          Trentino valley setting is stunning -- dense forests, dramatic elevation changes, and unpredictable weather that can
+          turn a dry run into a mud bath in minutes.
+        </p>
+        <p class="text-lg text-muted leading-relaxed mb-6">
+          Beyond the race track, the bike park offers progressive trails through alpine meadows. But the roots here are
+          legendary -- they don't forgive, and they don't negotiate. Every section of the Black Snake demands total
+          concentration, precise weight distribution, and the kind of grip that only comes from running the widest tires
+          your frame will clear.
+        </p>
+        <p class="text-lg text-muted leading-relaxed mb-10">
+          The <span class="text-accent font-medium">Trentino valley</span> rewards those who look beyond the race track.
+          Long descents through Val Meledrio, panoramic rides above the treeline, and some of the best mountain cuisine in
+          Italy waiting at the bottom. Val di Sole is a place that tests you on the bike and rewards you off it.
+        </p>
+      </div>
+      <blockquote class="pull-quote animate-on-scroll my-12">
+        "The roots at Val di Sole don't forgive. They don't even negotiate."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Trail Highlights -->
+  <section class="py-16 md:py-24 px-4 bg-card/30">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold mb-12 animate-on-scroll">
+        TRAIL <span class="text-accent">HIGHLIGHTS</span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 stagger-children">
+        <div class="bg-card rounded-xl p-6 animate-on-scroll">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-heading text-xl font-bold">Black Snake DH</h3>
+            <span class="text-sm text-red-400 font-medium">Expert</span>
+          </div>
+          <div class="difficulty-bar mb-4"><div class="fill expert"></div></div>
+          <p class="text-muted text-sm mb-2">2.4km &bull; 600m vertical drop</p>
+          <p class="text-muted text-sm leading-relaxed">
+            The World Cup course that breaks bikes and spirits. An unrelenting gauntlet of roots, rocks,
+            and off-camber sections through dark forest. Wet conditions amplify the difficulty tenfold.
+          </p>
+        </div>
+        <div class="bg-card rounded-xl p-6 animate-on-scroll">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-heading text-xl font-bold">Val Meledrio Trail</h3>
+            <span class="text-sm text-red-400 font-medium">Advanced</span>
+          </div>
+          <div class="difficulty-bar mb-4"><div class="fill advanced"></div></div>
+          <p class="text-muted text-sm mb-2">5.5km &bull; 700m vertical drop</p>
+          <p class="text-muted text-sm leading-relaxed">
+            A long, natural trail descending through the Meledrio valley. Technical root sections mixed with
+            fast open stretches. The length alone makes this a serious physical challenge.
+          </p>
+        </div>
+        <div class="bg-card rounded-xl p-6 animate-on-scroll">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-heading text-xl font-bold">Daolasa Flow</h3>
+            <span class="text-sm text-teal font-medium">Intermediate</span>
+          </div>
+          <div class="difficulty-bar mb-4"><div class="fill intermediate"></div></div>
+          <p class="text-muted text-sm mb-2">3.8km &bull; 400m vertical drop</p>
+          <p class="text-muted text-sm leading-relaxed">
+            The friendliest trail in Val di Sole. Machine-shaped berms, gentle gradients, and smooth
+            surfaces make this the ideal confidence builder before stepping up to the natural terrain.
+          </p>
+        </div>
+        <div class="bg-card rounded-xl p-6 animate-on-scroll">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-heading text-xl font-bold">Ponale Panorama</h3>
+            <span class="text-sm text-teal font-medium">Intermediate</span>
+          </div>
+          <div class="difficulty-bar mb-4"><div class="fill intermediate"></div></div>
+          <p class="text-muted text-sm mb-2">6.2km &bull; 500m vertical drop</p>
+          <p class="text-muted text-sm leading-relaxed">
+            A scenic descent with panoramic views of the Trentino mountains. Rolling terrain, natural
+            features, and alpine meadows make this a beautiful ride that rewards patience over aggression.
+          </p>
+        </div>
+      </div>
+      <div class="trail-map-placeholder h-48 md:h-64 flex items-center justify-center animate-on-scroll">
+        <p class="text-muted text-sm">Trail map loading...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Getting There -->
+  <section class="py-16 md:py-24 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold mb-10 animate-on-scroll">
+        GETTING <span class="text-accent">THERE</span>
+      </h2>
+      <div class="space-y-6">
+        <div class="flex items-start gap-4 animate-on-scroll">
+          <svg class="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+          <div>
+            <p class="font-medium text-light">Nearest Airport</p>
+            <p class="text-muted text-sm mt-1">Verona Airport (VRN) -- 2 hour drive. Innsbruck Airport (INN) -- 2.5 hour drive.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 animate-on-scroll">
+          <svg class="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10m10 0h-3m3 0h4a1 1 0 001-1v-3.5a1 1 0 00-.3-.7l-3-3a1 1 0 00-.7-.3H13"/></svg>
+          <div>
+            <p class="font-medium text-light">By Car</p>
+            <p class="text-muted text-sm mt-1">A22 Brenner motorway, exit at San Michele all'Adige, then follow signs to Val di Sole. Ample parking at Daolasa gondola.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 animate-on-scroll">
+          <svg class="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          <div>
+            <p class="font-medium text-light">Public Transport</p>
+            <p class="text-muted text-sm mt-1">Local bus from Trento to Commezzadura. Summer shuttle services run between villages and the bike park lifts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pro Tips -->
+  <section class="py-16 md:py-24 px-4 bg-card/30">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold mb-12 animate-on-scroll">
+        PRO <span class="text-accent">TIPS</span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 stagger-children">
+        <div class="flex gap-5 animate-on-scroll">
+          <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+            <span class="font-heading text-xl font-bold text-accent">1</span>
+          </div>
+          <div>
+            <h3 class="font-heading text-lg font-bold mb-2">Bring Spare Brake Pads</h3>
+            <p class="text-muted text-sm leading-relaxed">The roots destroy brake pads at an alarming rate, especially in wet conditions. Pack at least one extra set -- you'll thank yourself by day two.</p>
+          </div>
+        </div>
+        <div class="flex gap-5 animate-on-scroll">
+          <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+            <span class="font-heading text-xl font-bold text-accent">2</span>
+          </div>
+          <div>
+            <h3 class="font-heading text-lg font-bold mb-2">Check Weather Obsessively</h3>
+            <p class="text-muted text-sm leading-relaxed">Conditions change fast in the Trentino mountains. A dry morning can become a mud bath by noon. Monitor forecasts hourly and plan your runs accordingly.</p>
+          </div>
+        </div>
+        <div class="flex gap-5 animate-on-scroll">
+          <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+            <span class="font-heading text-xl font-bold text-accent">3</span>
+          </div>
+          <div>
+            <h3 class="font-heading text-lg font-bold mb-2">Ride Daolasa First</h3>
+            <p class="text-muted text-sm leading-relaxed">Build confidence on the Daolasa Flow trail before attempting the Black Snake. The flow trail will calibrate your feel for the terrain without the consequences.</p>
+          </div>
+        </div>
+        <div class="flex gap-5 animate-on-scroll">
+          <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+            <span class="font-heading text-xl font-bold text-accent">4</span>
+          </div>
+          <div>
+            <h3 class="font-heading text-lg font-bold mb-2">Try the Local Cuisine</h3>
+            <p class="text-muted text-sm leading-relaxed">Trentino cuisine is exceptional. After a day of fighting roots, reward yourself with local polenta, strangolapreti, and a glass of Teroldego. You've earned it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- More Locations -->
+  <section class="py-16 md:py-24 px-4">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold mb-12 animate-on-scroll">
+        EXPLORE <span class="text-accent">MORE</span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 stagger-children">
+        <a href="fort-william.html" class="location-card block bg-card rounded-xl overflow-hidden animate-on-scroll">
+          <div class="relative h-56 overflow-hidden">
+            <div class="card-image absolute inset-0 bg-cover bg-center"
+                 style="background-image: url('https://images.unsplash.com/photo-1517649763962-0c623066013b?w=600&q=80');"></div>
+            <div class="card-overlay absolute inset-0"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-5">
+              <span class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-medium rounded mb-2">UK</span>
+              <h3 class="font-heading text-lg font-bold text-light">Fort William</h3>
+              <p class="text-muted text-xs mt-1">The greatest downhill track</p>
+            </div>
+          </div>
+        </a>
+        <a href="verbier.html" class="location-card block bg-card rounded-xl overflow-hidden animate-on-scroll">
+          <div class="relative h-56 overflow-hidden">
+            <div class="card-image absolute inset-0 bg-cover bg-center"
+                 style="background-image: url('https://images.unsplash.com/photo-1531410263193-4db1641e3352?w=600&q=80');"></div>
+            <div class="card-overlay absolute inset-0"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-5">
+              <span class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-medium rounded mb-2">SWITZERLAND</span>
+              <h3 class="font-heading text-lg font-bold text-light">Verbier</h3>
+              <p class="text-muted text-xs mt-1">High-alpine descents from 3,000m</p>
+            </div>
+          </div>
+        </a>
+        <a href="finale-ligure.html" class="location-card block bg-card rounded-xl overflow-hidden animate-on-scroll">
+          <div class="relative h-56 overflow-hidden">
+            <div class="card-image absolute inset-0 bg-cover bg-center"
+                 style="background-image: url('https://images.unsplash.com/photo-1560014003-2e6860b9db45?w=600&q=80');"></div>
+            <div class="card-overlay absolute inset-0"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-5">
+              <span class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-medium rounded mb-2">ITALY</span>
+              <h3 class="font-heading text-lg font-bold text-light">Finale Ligure</h3>
+              <p class="text-muted text-xs mt-1">Mediterranean trails</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-card border-t border-white/5 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div>
+          <h4 class="font-heading text-lg font-bold mb-4">DESTINATIONS</h4>
+          <ul class="space-y-2 text-sm text-muted">
+            <li><a href="morzine.html" class="hover:text-accent transition-colors">Morzine / Les Gets</a></li>
+            <li><a href="leogang.html" class="hover:text-accent transition-colors">Leogang</a></li>
+            <li><a href="val-di-sole.html" class="hover:text-accent transition-colors">Val di Sole</a></li>
+            <li><a href="fort-william.html" class="hover:text-accent transition-colors">Fort William</a></li>
+            <li><a href="verbier.html" class="hover:text-accent transition-colors">Verbier</a></li>
+            <li><a href="finale-ligure.html" class="hover:text-accent transition-colors">Finale Ligure</a></li>
+            <li><a href="schladming.html" class="hover:text-accent transition-colors">Schladming</a></li>
+            <li><a href="vallnord.html" class="hover:text-accent transition-colors">Vallnord</a></li>
+            <li><a href="bike-park-wales.html" class="hover:text-accent transition-colors">Bike Park Wales</a></li>
+            <li><a href="chatel.html" class="hover:text-accent transition-colors">Chatel</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading text-lg font-bold mb-4">EXPLORE</h4>
+          <ul class="space-y-2 text-sm text-muted">
+            <li><a href="../index.html" class="hover:text-accent transition-colors">Home</a></li>
+            <li><a href="../locations.html" class="hover:text-accent transition-colors">All Locations</a></li>
+            <li><a href="../guide.html" class="hover:text-accent transition-colors">Beginner's Guide</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading text-lg font-bold mb-4">CREDITS</h4>
+          <p class="text-sm text-muted leading-relaxed">
+            A passion project celebrating Europe's finest downhill mountain biking destinations.
+            Images via Unsplash. Built with Tailwind CSS.
+          </p>
+          <p class="text-sm text-muted mt-4">
+            <span class="text-accent font-heading font-bold">DH</span>EUROPE
+          </p>
+        </div>
+      </div>
+      <div class="border-t border-white/5 pt-8 text-center text-sm text-muted">
+        <p>&copy; 2026 DHEUROPE. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
